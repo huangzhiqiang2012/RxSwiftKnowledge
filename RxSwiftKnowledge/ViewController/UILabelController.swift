@@ -11,6 +11,8 @@ import RxCocoa
 import RxSwift
 
 class UILabelController: BaseController {
+    
+    var timer:Observable<Int>?
 
     override func viewDidLoad() {
         super.viewDidLoad()

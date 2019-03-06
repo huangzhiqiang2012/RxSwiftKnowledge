@@ -31,7 +31,26 @@ class ViewController: UIViewController {
                                                             "Driver",
                                                             "Schedulers",
                                                             "UILabel",
-                                                            "UITextFieldUITextView"])
+                                                            "UITextFieldUITextView",
+                                                            "UIButtonUIBarButtonItem",
+                                                            "UISegmentedControl",
+                                                            "UIActivityIndicatorViewUIApplication",
+                                                            "UISliderUIStepper",
+                                                            "TwoWayBinding",
+                                                            "UIGestureRecognizer",
+                                                            "UIDatePicker",
+                                                            "UITableView",
+                                                            "RxTableViewDataSources",
+                                                            "UITableViewEdit",
+                                                            "UITableViewDifferentCell",
+                                                            "UICollectionView",
+                                                            "UIPickerView",
+                                                            "WeakSelfUnownedSelf",
+                                                            "URLSession",
+                                                            "RxAlamofire",
+                                                            "Moya",
+                                                            "MVVM",
+                                                            ])
         return datas
     }()
     

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		697DF48017C592C538E8555E /* Pods_RxSwiftKnowledge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E73F394CBE9DE364C163DF5 /* Pods_RxSwiftKnowledge.framework */; };
+		95F88B67222CC02700250D13 /* UITableViewEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B66222CC02700250D13 /* UITableViewEditController.swift */; };
+		95F88B69222D09B500250D13 /* UITableViewDifferentCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B68222D09B500250D13 /* UITableViewDifferentCellController.swift */; };
+		95F88B6B222D25F000250D13 /* UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B6A222D25F000250D13 /* UICollectionViewController.swift */; };
+		95FC57FF222F723100AEE415 /* RxAlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC57FE222F723100AEE415 /* RxAlamofireController.swift */; };
+		95FC5801222FA3A300AEE415 /* MoyaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5800222FA3A300AEE415 /* MoyaController.swift */; };
+		95FC5803222FCC5900AEE415 /* MVVMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5802222FCC5900AEE415 /* MVVMController.swift */; };
 		95FD08822227894C0004467C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08812227894C0004467C /* AppDelegate.swift */; };
 		95FD08842227894C0004467C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08832227894C0004467C /* ViewController.swift */; };
 		95FD08872227894C0004467C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95FD08852227894C0004467C /* Main.storyboard */; };
@@ -31,12 +37,31 @@
 		95FD08B32227BA8A0004467C /* SchedulersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08B22227BA8A0004467C /* SchedulersController.swift */; };
 		95FD08B52227BA970004467C /* UILabelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08B42227BA970004467C /* UILabelController.swift */; };
 		95FD08B72227BAA60004467C /* UITextFieldUITextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08B62227BAA60004467C /* UITextFieldUITextViewController.swift */; };
+		95FD08B92227DA920004467C /* UIButtonUIBarButtonItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08B82227DA920004467C /* UIButtonUIBarButtonItemController.swift */; };
+		95FD08BB2227EE780004467C /* UISegmentedControlController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08BA2227EE780004467C /* UISegmentedControlController.swift */; };
+		95FD08BD2228127F0004467C /* UIActivityIndicatorViewUIApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08BC2228127F0004467C /* UIActivityIndicatorViewUIApplicationController.swift */; };
+		95FD08BF222814D60004467C /* UISliderUIStepperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08BE222814D60004467C /* UISliderUIStepperController.swift */; };
+		95FD08C1222818290004467C /* TwoWayBindingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08C0222818290004467C /* TwoWayBindingController.swift */; };
+		95FD08C322281D110004467C /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08C222281D110004467C /* Operators.swift */; };
+		95FD87EB222E49E900C2E230 /* UIPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD87EA222E49E900C2E230 /* UIPickerViewController.swift */; };
+		95FD87ED222E603500C2E230 /* WeakSelfUnownedSelfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD87EC222E603500C2E230 /* WeakSelfUnownedSelfController.swift */; };
+		95FD87EF222E66D400C2E230 /* URLSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD87EE222E66D400C2E230 /* URLSessionController.swift */; };
+		95FF098A2228FE4000797971 /* UIGestureRecognizerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FF09892228FE4000797971 /* UIGestureRecognizerController.swift */; };
+		95FF098C2229002700797971 /* UIDatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FF098B2229002700797971 /* UIDatePickerController.swift */; };
+		95FF098E22290E7000797971 /* UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FF098D22290E7000797971 /* UITableViewController.swift */; };
+		95FF099022291B5700797971 /* RxTableViewDataSourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FF098F22291B5700797971 /* RxTableViewDataSourcesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09ADA2B8EEF47B7DE8B3EC64 /* Pods-RxSwiftKnowledge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftKnowledge.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftKnowledge/Pods-RxSwiftKnowledge.release.xcconfig"; sourceTree = "<group>"; };
 		1E73F394CBE9DE364C163DF5 /* Pods_RxSwiftKnowledge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftKnowledge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2087D2F766920D1331D0CEF8 /* Pods-RxSwiftKnowledge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftKnowledge.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftKnowledge/Pods-RxSwiftKnowledge.debug.xcconfig"; sourceTree = "<group>"; };
+		95F88B66222CC02700250D13 /* UITableViewEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewEditController.swift; sourceTree = "<group>"; };
+		95F88B68222D09B500250D13 /* UITableViewDifferentCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDifferentCellController.swift; sourceTree = "<group>"; };
+		95F88B6A222D25F000250D13 /* UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewController.swift; sourceTree = "<group>"; };
+		95FC57FE222F723100AEE415 /* RxAlamofireController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireController.swift; sourceTree = "<group>"; };
+		95FC5800222FA3A300AEE415 /* MoyaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaController.swift; sourceTree = "<group>"; };
+		95FC5802222FCC5900AEE415 /* MVVMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMController.swift; sourceTree = "<group>"; };
 		95FD087E2227894C0004467C /* RxSwiftKnowledge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftKnowledge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FD08812227894C0004467C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FD08832227894C0004467C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +87,19 @@
 		95FD08B22227BA8A0004467C /* SchedulersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulersController.swift; sourceTree = "<group>"; };
 		95FD08B42227BA970004467C /* UILabelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelController.swift; sourceTree = "<group>"; };
 		95FD08B62227BAA60004467C /* UITextFieldUITextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldUITextViewController.swift; sourceTree = "<group>"; };
+		95FD08B82227DA920004467C /* UIButtonUIBarButtonItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonUIBarButtonItemController.swift; sourceTree = "<group>"; };
+		95FD08BA2227EE780004467C /* UISegmentedControlController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlController.swift; sourceTree = "<group>"; };
+		95FD08BC2228127F0004467C /* UIActivityIndicatorViewUIApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewUIApplicationController.swift; sourceTree = "<group>"; };
+		95FD08BE222814D60004467C /* UISliderUIStepperController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderUIStepperController.swift; sourceTree = "<group>"; };
+		95FD08C0222818290004467C /* TwoWayBindingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoWayBindingController.swift; sourceTree = "<group>"; };
+		95FD08C222281D110004467C /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		95FD87EA222E49E900C2E230 /* UIPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPickerViewController.swift; sourceTree = "<group>"; };
+		95FD87EC222E603500C2E230 /* WeakSelfUnownedSelfController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfUnownedSelfController.swift; sourceTree = "<group>"; };
+		95FD87EE222E66D400C2E230 /* URLSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionController.swift; sourceTree = "<group>"; };
+		95FF09892228FE4000797971 /* UIGestureRecognizerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGestureRecognizerController.swift; sourceTree = "<group>"; };
+		95FF098B2229002700797971 /* UIDatePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerController.swift; sourceTree = "<group>"; };
+		95FF098D22290E7000797971 /* UITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewController.swift; sourceTree = "<group>"; };
+		95FF098F22291B5700797971 /* RxTableViewDataSourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewDataSourcesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +144,7 @@
 		95FD08802227894C0004467C /* RxSwiftKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				95FD08C222281D110004467C /* Operators.swift */,
 				95FD08932227B1600004467C /* ViewController */,
 				95FD08812227894C0004467C /* AppDelegate.swift */,
 				95FD08832227894C0004467C /* ViewController.swift */,
@@ -138,6 +177,24 @@
 				95FD08B22227BA8A0004467C /* SchedulersController.swift */,
 				95FD08B42227BA970004467C /* UILabelController.swift */,
 				95FD08B62227BAA60004467C /* UITextFieldUITextViewController.swift */,
+				95FD08B82227DA920004467C /* UIButtonUIBarButtonItemController.swift */,
+				95FD08BA2227EE780004467C /* UISegmentedControlController.swift */,
+				95FD08BC2228127F0004467C /* UIActivityIndicatorViewUIApplicationController.swift */,
+				95FD08BE222814D60004467C /* UISliderUIStepperController.swift */,
+				95FD08C0222818290004467C /* TwoWayBindingController.swift */,
+				95FF09892228FE4000797971 /* UIGestureRecognizerController.swift */,
+				95FF098B2229002700797971 /* UIDatePickerController.swift */,
+				95FF098D22290E7000797971 /* UITableViewController.swift */,
+				95FF098F22291B5700797971 /* RxTableViewDataSourcesController.swift */,
+				95F88B66222CC02700250D13 /* UITableViewEditController.swift */,
+				95F88B68222D09B500250D13 /* UITableViewDifferentCellController.swift */,
+				95F88B6A222D25F000250D13 /* UICollectionViewController.swift */,
+				95FD87EA222E49E900C2E230 /* UIPickerViewController.swift */,
+				95FD87EC222E603500C2E230 /* WeakSelfUnownedSelfController.swift */,
+				95FD87EE222E66D400C2E230 /* URLSessionController.swift */,
+				95FC57FE222F723100AEE415 /* RxAlamofireController.swift */,
+				95FC5800222FA3A300AEE415 /* MoyaController.swift */,
+				95FC5802222FCC5900AEE415 /* MVVMController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -228,16 +285,30 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftKnowledge/Pods-RxSwiftKnowledge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,26 +345,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95FD08BB2227EE780004467C /* UISegmentedControlController.swift in Sources */,
+				95F88B67222CC02700250D13 /* UITableViewEditController.swift in Sources */,
 				95FD08AD2227BA610004467C /* DebugOperationController.swift in Sources */,
 				95FD08B72227BAA60004467C /* UITextFieldUITextViewController.swift in Sources */,
+				95FD87EF222E66D400C2E230 /* URLSessionController.swift in Sources */,
 				95FD08842227894C0004467C /* ViewController.swift in Sources */,
 				95FD08B52227BA970004467C /* UILabelController.swift in Sources */,
+				95F88B6B222D25F000250D13 /* UICollectionViewController.swift in Sources */,
+				95FF098E22290E7000797971 /* UITableViewController.swift in Sources */,
+				95FD08B92227DA920004467C /* UIButtonUIBarButtonItemController.swift in Sources */,
+				95FD08BF222814D60004467C /* UISliderUIStepperController.swift in Sources */,
+				95FC5803222FCC5900AEE415 /* MVVMController.swift in Sources */,
 				95FD08A32227B99A0004467C /* CombiningObservablesController.swift in Sources */,
 				95FD08A92227BA3B0004467C /* ObservableUtilityOperatorsController.swift in Sources */,
+				95FD08C322281D110004467C /* Operators.swift in Sources */,
+				95FD08BD2228127F0004467C /* UIActivityIndicatorViewUIApplicationController.swift in Sources */,
+				95FC5801222FA3A300AEE415 /* MoyaController.swift in Sources */,
 				95FD08822227894C0004467C /* AppDelegate.swift in Sources */,
 				95FD08B32227BA8A0004467C /* SchedulersController.swift in Sources */,
 				95FD089D2227B9580004467C /* TransformingObservablesController.swift in Sources */,
+				95FD08C1222818290004467C /* TwoWayBindingController.swift in Sources */,
+				95FD87EB222E49E900C2E230 /* UIPickerViewController.swift in Sources */,
+				95FF099022291B5700797971 /* RxTableViewDataSourcesController.swift in Sources */,
 				95FD089B2227B9320004467C /* SubjectsAndVariablesController.swift in Sources */,
 				95FD08992227B69E0004467C /* BaseController.swift in Sources */,
 				95FD08AB2227BA540004467C /* ErrorHandlingOperatorsController.swift in Sources */,
 				95FD08B12227BA7E0004467C /* DriverController.swift in Sources */,
 				95FD08952227B18A0004467C /* ObservableController.swift in Sources */,
+				95FC57FF222F723100AEE415 /* RxAlamofireController.swift in Sources */,
 				95FD08A52227B9A90004467C /* MathematicalAndAggregateOperatorsController.swift in Sources */,
+				95FD87ED222E603500C2E230 /* WeakSelfUnownedSelfController.swift in Sources */,
 				95FD08A12227B97B0004467C /* ConditionalAndBooleanOperatorsController.swift in Sources */,
 				95FD08972227B19B0004467C /* ObserverController.swift in Sources */,
+				95FF098A2228FE4000797971 /* UIGestureRecognizerController.swift in Sources */,
 				95FD08AF2227BA700004467C /* SingleCompletableMaybeController.swift in Sources */,
+				95FF098C2229002700797971 /* UIDatePickerController.swift in Sources */,
 				95FD089F2227B96C0004467C /* FilteringObservablesController.swift in Sources */,
 				95FD08A72227BA2E0004467C /* ConnectableObservableOperatorsController.swift in Sources */,
+				95F88B69222D09B500250D13 /* UITableViewDifferentCellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

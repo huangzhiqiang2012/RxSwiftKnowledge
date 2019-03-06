@@ -6,9 +6,15 @@ target 'RxSwiftKnowledge' do
   use_frameworks!
 
   # Pods for Observer
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
+  pod 'RxSwift',          '~> 4.0'
+  pod 'RxCocoa',          '~> 4.0'
   
+  pod 'RxDataSources',    '~> 3.0'
+  pod 'HandyJSON'
+  pod 'RxAlamofire'
+#  pod 'Moya',             '~> 12.0'
+  pod 'Moya/RxSwift',     '~> 12.0'
+
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       if target.name == 'RxSwift'

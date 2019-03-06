@@ -180,6 +180,14 @@ class SubjectsAndVariablesController: BaseController {
         
         /// 修改value值
         variable.value = "444"
+        
+        let arr = Variable<[String]>([])
+        arr.asObservable().distinctUntilChanged {$0.count > $1.count}.subscribe(onNext: {
+            print($0)
+        }).disposed(by: disposeBag)
+        for i:Int in 0..<10 {
+            arr.value.append("我是新元素\(i.description)")
+        }
     }
 }
 
