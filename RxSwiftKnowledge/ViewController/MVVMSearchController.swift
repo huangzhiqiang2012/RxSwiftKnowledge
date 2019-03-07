@@ -1,5 +1,5 @@
 //
-//  MVVMController.swift
+//  MVVMSearchController.swift
 //  RxSwiftKnowledge
 //
 //  Created by Darren on 2019/3/6.
@@ -12,11 +12,11 @@ import RxSwift
 import Moya
 import HandyJSON
 
-public enum GitHubAPI {
+public enum GitHubSearchAPI {
     case repositories(String)
 }
 
-extension GitHubAPI : TargetType {
+extension GitHubSearchAPI : TargetType {
     public var baseURL: URL {
         return URL(string: "https://api.github.com")!
     }
@@ -71,64 +71,74 @@ class GitHubRepositoryModel: BaseModel {
     var description:String?
 }
 
+class GitHubSearchService {
+    func searchRepositories(query:String) -> Driver<GitHubRepositoriesModel> {
+        
+        /// 不能在这里初始化,需要在执行方法前就得初始化,
+        /// let gitHubProvider = MoyaProvider<GitHubAPI>()
+        return gitHubProvider.rx.request(.repositories(query)).filterSuccessfulStatusCodes().mapJSON().map {
+            GitHubRepositoriesModel.deserialize(from: ($0 as! [String : Any])) ?? GitHubRepositoriesModel()
+            }.asDriver(onErrorDriveWith:Driver.empty())
+    }
+    
+    fileprivate var  gitHubProvider : MoyaProvider<GitHubSearchAPI>
+    
+    init() {
+        gitHubProvider = MoyaProvider<GitHubSearchAPI>()
+    }
+}
+
 class ViewModel {
     
     /**** 输入部分 ***/
     /// 查询行为
-    fileprivate let searchAction:Observable<String>
+    fileprivate let searchAction:Driver<String>
     
     /**** 输出部分 ***/
     /// 所有的查询结果
-    let searchRsult:Observable<GitHubRepositoriesModel>
+    let searchRsult:Driver<GitHubRepositoriesModel>
     
     /// 查询结果里的资源列表
-    let repositories:Observable<[GitHubRepositoryModel]>
+    let repositories:Driver<[GitHubRepositoryModel]>
     
     /// 清空结果动作
-    let cleanResult:Observable<Void>
+    let cleanResult:Driver<Void>
     
     /// 导航栏标题
-    let navigationTitle:Observable<String>
+    let navigationTitle:Driver<String>
     
     /// ViewModel初始化（根据输入实现对应的输出）
-    init(searchAction:Observable<String>) {
+    init(searchAction:Driver<String>) {
 
-        let gitHubProvider = MoyaProvider<GitHubAPI>()
+        let networkService = GitHubSearchService()
         
         self.searchAction = searchAction
         
         /// 生成查询结果序列
-        self.searchRsult = searchAction.filter{!$0.isEmpty}.flatMapLatest {
-            gitHubProvider.rx.request(.repositories($0)).filterSuccessfulStatusCodes().mapJSON().map {
-                GitHubRepositoriesModel.deserialize(from: ($0 as! [String : Any])) ?? GitHubRepositoriesModel()
-                }.asObservable().catchError({ error in
-                    print("发生错误：",error.localizedDescription)
-                    return Observable<GitHubRepositoriesModel>.empty()
-                })
-        }.share(replay: 1)
+        self.searchRsult = searchAction.filter{!$0.isEmpty}.flatMapLatest(networkService.searchRepositories)
         
         /// 生成清空结果动作序列
         self.cleanResult = searchAction.filter{$0.isEmpty}.map { _ in Void()}
         
         /// 生成查询结果里的资源列表序列（如果查询到结果则返回结果，如果是清空数据则返回空数组）
-        self.repositories = Observable.of(searchRsult.map {
+        self.repositories = Driver.merge(searchRsult.map {
             if let items = $0.items {
                 return items
             }
             return []
-        }, cleanResult.map {[]}).merge()
+        }, cleanResult.map {[]})
         
         /// 生成导航栏标题序列（如果查询到结果则返回数量，如果是清空数据则返回默认标题）
-        self.navigationTitle = Observable.of(searchRsult.map {
+        self.navigationTitle = Driver.merge(searchRsult.map {
             if let count = $0.total_count {
                return "共有 \(count) 个结果"
             }
             return "共有 0 个结果"
-        }, cleanResult.map{"apple.com"}).merge()
+        }, cleanResult.map{"www.github.com"})
     }
 }
 
-class MVVMController: BaseController {
+class MVVMSearchController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -183,17 +193,17 @@ class MVVMController: BaseController {
         view.addSubview(tableView)
         
         /// 查询条件输入
-        let searchAction = searchBar.rx.text.orEmpty.throttle(0.5, scheduler: MainScheduler.instance) /// 只有间隔超过0.5k秒才发送
-        .distinctUntilChanged().asObservable()
+        let searchAction = searchBar.rx.text.orEmpty.asDriver().throttle(0.5) /// 只有间隔超过0.5k秒才发送
+        .distinctUntilChanged()
         
         /// 初始化ViewModel
         let viewModel = ViewModel(searchAction:searchAction)
         
         /// 绑定导航栏标题数据
-        viewModel.navigationTitle.bind(to: self.navigationItem.rx.title).disposed(by: disposeBag)
+        viewModel.navigationTitle.drive(self.navigationItem.rx.title).disposed(by: disposeBag)
         
         /// 将数据绑定到表格
-        viewModel.repositories.bind(to: tableView.rx.items) { tableView, row, element in
+        viewModel.repositories.drive(tableView.rx.items) { tableView, row, element in
             var cell = tableView.dequeueReusableCell(withIdentifier: identifier)
             if cell == nil {
                 
@@ -212,7 +222,7 @@ class MVVMController: BaseController {
     }
 }
 
-extension MVVMController {
+extension MVVMSearchController {
     fileprivate func showAlert(title:String?, message:String?){
         let alertController = UIAlertController(title: title,
                                                 message: message, preferredStyle: .alert)

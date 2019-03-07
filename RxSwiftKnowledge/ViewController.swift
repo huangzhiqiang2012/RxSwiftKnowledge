@@ -49,7 +49,9 @@ class ViewController: UIViewController {
                                                             "URLSession",
                                                             "RxAlamofire",
                                                             "Moya",
-                                                            "MVVM",
+                                                            "MVVMSearch",
+                                                            "MVVMRegister",
+                                                            "MJRefresh",
                                                             ])
         return datas
     }()

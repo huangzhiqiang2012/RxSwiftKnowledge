@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		697DF48017C592C538E8555E /* Pods_RxSwiftKnowledge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E73F394CBE9DE364C163DF5 /* Pods_RxSwiftKnowledge.framework */; };
+		950D2C972230C88500839AB3 /* MVVMRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950D2C962230C88500839AB3 /* MVVMRegisterController.swift */; };
+		950D2C9A223141BE00839AB3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950D2C99223141BE00839AB3 /* ActivityIndicator.swift */; };
+		950D2C9C2231450000839AB3 /* MJRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950D2C9B2231450000839AB3 /* MJRefreshController.swift */; };
 		95F88B67222CC02700250D13 /* UITableViewEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B66222CC02700250D13 /* UITableViewEditController.swift */; };
 		95F88B69222D09B500250D13 /* UITableViewDifferentCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B68222D09B500250D13 /* UITableViewDifferentCellController.swift */; };
 		95F88B6B222D25F000250D13 /* UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B6A222D25F000250D13 /* UICollectionViewController.swift */; };
 		95FC57FF222F723100AEE415 /* RxAlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC57FE222F723100AEE415 /* RxAlamofireController.swift */; };
 		95FC5801222FA3A300AEE415 /* MoyaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5800222FA3A300AEE415 /* MoyaController.swift */; };
-		95FC5803222FCC5900AEE415 /* MVVMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5802222FCC5900AEE415 /* MVVMController.swift */; };
+		95FC5803222FCC5900AEE415 /* MVVMSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5802222FCC5900AEE415 /* MVVMSearchController.swift */; };
 		95FD08822227894C0004467C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08812227894C0004467C /* AppDelegate.swift */; };
 		95FD08842227894C0004467C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD08832227894C0004467C /* ViewController.swift */; };
 		95FD08872227894C0004467C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95FD08852227894C0004467C /* Main.storyboard */; };
@@ -56,12 +59,16 @@
 		09ADA2B8EEF47B7DE8B3EC64 /* Pods-RxSwiftKnowledge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftKnowledge.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftKnowledge/Pods-RxSwiftKnowledge.release.xcconfig"; sourceTree = "<group>"; };
 		1E73F394CBE9DE364C163DF5 /* Pods_RxSwiftKnowledge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftKnowledge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2087D2F766920D1331D0CEF8 /* Pods-RxSwiftKnowledge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftKnowledge.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftKnowledge/Pods-RxSwiftKnowledge.debug.xcconfig"; sourceTree = "<group>"; };
+		950D2C962230C88500839AB3 /* MVVMRegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMRegisterController.swift; sourceTree = "<group>"; };
+		950D2C99223141BE00839AB3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		950D2C9B2231450000839AB3 /* MJRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshController.swift; sourceTree = "<group>"; };
+		950D2C9E22314AE200839AB3 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
 		95F88B66222CC02700250D13 /* UITableViewEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewEditController.swift; sourceTree = "<group>"; };
 		95F88B68222D09B500250D13 /* UITableViewDifferentCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDifferentCellController.swift; sourceTree = "<group>"; };
 		95F88B6A222D25F000250D13 /* UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewController.swift; sourceTree = "<group>"; };
 		95FC57FE222F723100AEE415 /* RxAlamofireController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireController.swift; sourceTree = "<group>"; };
 		95FC5800222FA3A300AEE415 /* MoyaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaController.swift; sourceTree = "<group>"; };
-		95FC5802222FCC5900AEE415 /* MVVMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMController.swift; sourceTree = "<group>"; };
+		95FC5802222FCC5900AEE415 /* MVVMSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSearchController.swift; sourceTree = "<group>"; };
 		95FD087E2227894C0004467C /* RxSwiftKnowledge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftKnowledge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FD08812227894C0004467C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FD08832227894C0004467C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +130,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		950D2C982231417B00839AB3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				950D2C99223141BE00839AB3 /* ActivityIndicator.swift */,
+				95FD08C222281D110004467C /* Operators.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		95FD08752227894C0004467C = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +160,7 @@
 		95FD08802227894C0004467C /* RxSwiftKnowledge */ = {
 			isa = PBXGroup;
 			children = (
-				95FD08C222281D110004467C /* Operators.swift */,
+				950D2C982231417B00839AB3 /* Tools */,
 				95FD08932227B1600004467C /* ViewController */,
 				95FD08812227894C0004467C /* AppDelegate.swift */,
 				95FD08832227894C0004467C /* ViewController.swift */,
@@ -152,6 +168,7 @@
 				95FD08882227894D0004467C /* Assets.xcassets */,
 				95FD088A2227894D0004467C /* LaunchScreen.storyboard */,
 				95FD088D2227894D0004467C /* Info.plist */,
+				950D2C9E22314AE200839AB3 /* bridging.h */,
 			);
 			path = RxSwiftKnowledge;
 			sourceTree = "<group>";
@@ -194,7 +211,9 @@
 				95FD87EE222E66D400C2E230 /* URLSessionController.swift */,
 				95FC57FE222F723100AEE415 /* RxAlamofireController.swift */,
 				95FC5800222FA3A300AEE415 /* MoyaController.swift */,
-				95FC5802222FCC5900AEE415 /* MVVMController.swift */,
+				95FC5802222FCC5900AEE415 /* MVVMSearchController.swift */,
+				950D2C962230C88500839AB3 /* MVVMRegisterController.swift */,
+				950D2C9B2231450000839AB3 /* MJRefreshController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -288,6 +307,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
@@ -303,6 +323,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
@@ -351,16 +372,18 @@
 				95FD08B72227BAA60004467C /* UITextFieldUITextViewController.swift in Sources */,
 				95FD87EF222E66D400C2E230 /* URLSessionController.swift in Sources */,
 				95FD08842227894C0004467C /* ViewController.swift in Sources */,
+				950D2C9C2231450000839AB3 /* MJRefreshController.swift in Sources */,
 				95FD08B52227BA970004467C /* UILabelController.swift in Sources */,
 				95F88B6B222D25F000250D13 /* UICollectionViewController.swift in Sources */,
 				95FF098E22290E7000797971 /* UITableViewController.swift in Sources */,
 				95FD08B92227DA920004467C /* UIButtonUIBarButtonItemController.swift in Sources */,
 				95FD08BF222814D60004467C /* UISliderUIStepperController.swift in Sources */,
-				95FC5803222FCC5900AEE415 /* MVVMController.swift in Sources */,
+				95FC5803222FCC5900AEE415 /* MVVMSearchController.swift in Sources */,
 				95FD08A32227B99A0004467C /* CombiningObservablesController.swift in Sources */,
 				95FD08A92227BA3B0004467C /* ObservableUtilityOperatorsController.swift in Sources */,
 				95FD08C322281D110004467C /* Operators.swift in Sources */,
 				95FD08BD2228127F0004467C /* UIActivityIndicatorViewUIApplicationController.swift in Sources */,
+				950D2C9A223141BE00839AB3 /* ActivityIndicator.swift in Sources */,
 				95FC5801222FA3A300AEE415 /* MoyaController.swift in Sources */,
 				95FD08822227894C0004467C /* AppDelegate.swift in Sources */,
 				95FD08B32227BA8A0004467C /* SchedulersController.swift in Sources */,
@@ -383,6 +406,7 @@
 				95FF098C2229002700797971 /* UIDatePickerController.swift in Sources */,
 				95FD089F2227B96C0004467C /* FilteringObservablesController.swift in Sources */,
 				95FD08A72227BA2E0004467C /* ConnectableObservableOperatorsController.swift in Sources */,
+				950D2C972230C88500839AB3 /* MVVMRegisterController.swift in Sources */,
 				95F88B69222D09B500250D13 /* UITableViewDifferentCellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +562,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Darren.RxSwiftKnowledge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = RxSwiftKnowledge/bridging.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -556,6 +581,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Darren.RxSwiftKnowledge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = RxSwiftKnowledge/bridging.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
