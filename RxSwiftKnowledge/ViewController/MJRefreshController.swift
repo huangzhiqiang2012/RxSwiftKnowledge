@@ -29,7 +29,6 @@ extension Reactive where Base : MJRefreshComponent {
     /// 停止刷新
     var enRefreshing : Binder<Bool> {
         return Binder(base) { refresh, isEnd in
-            print("--__--|| refresh__\(refresh) isEnd__\(isEnd)")
             if isEnd {
                 refresh.endRefreshing()
             }

@@ -52,6 +52,8 @@ class ViewController: UIViewController {
                                                             "MVVMSearch",
                                                             "MVVMRegister",
                                                             "MJRefresh",
+                                                            "DelegateProxyLocation",
+                                                            "DelegateProxyUIImagePicker",
                                                             ])
         return datas
     }()

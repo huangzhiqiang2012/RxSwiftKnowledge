@@ -11,6 +11,8 @@
 		950D2C972230C88500839AB3 /* MVVMRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950D2C962230C88500839AB3 /* MVVMRegisterController.swift */; };
 		950D2C9A223141BE00839AB3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950D2C99223141BE00839AB3 /* ActivityIndicator.swift */; };
 		950D2C9C2231450000839AB3 /* MJRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950D2C9B2231450000839AB3 /* MJRefreshController.swift */; };
+		9552F9FF2232189C00BF3032 /* DelegateProxyLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F9FE2232189C00BF3032 /* DelegateProxyLocationController.swift */; };
+		95A6B73322363F8200F4933A /* DelegateProxyUIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B73222363F8200F4933A /* DelegateProxyUIImagePickerController.swift */; };
 		95F88B67222CC02700250D13 /* UITableViewEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B66222CC02700250D13 /* UITableViewEditController.swift */; };
 		95F88B69222D09B500250D13 /* UITableViewDifferentCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B68222D09B500250D13 /* UITableViewDifferentCellController.swift */; };
 		95F88B6B222D25F000250D13 /* UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B6A222D25F000250D13 /* UICollectionViewController.swift */; };
@@ -63,6 +65,8 @@
 		950D2C99223141BE00839AB3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		950D2C9B2231450000839AB3 /* MJRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshController.swift; sourceTree = "<group>"; };
 		950D2C9E22314AE200839AB3 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
+		9552F9FE2232189C00BF3032 /* DelegateProxyLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyLocationController.swift; sourceTree = "<group>"; };
+		95A6B73222363F8200F4933A /* DelegateProxyUIImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyUIImagePickerController.swift; sourceTree = "<group>"; };
 		95F88B66222CC02700250D13 /* UITableViewEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewEditController.swift; sourceTree = "<group>"; };
 		95F88B68222D09B500250D13 /* UITableViewDifferentCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDifferentCellController.swift; sourceTree = "<group>"; };
 		95F88B6A222D25F000250D13 /* UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 				95FC5802222FCC5900AEE415 /* MVVMSearchController.swift */,
 				950D2C962230C88500839AB3 /* MVVMRegisterController.swift */,
 				950D2C9B2231450000839AB3 /* MJRefreshController.swift */,
+				9552F9FE2232189C00BF3032 /* DelegateProxyLocationController.swift */,
+				95A6B73222363F8200F4933A /* DelegateProxyUIImagePickerController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 				95FD08822227894C0004467C /* AppDelegate.swift in Sources */,
 				95FD08B32227BA8A0004467C /* SchedulersController.swift in Sources */,
 				95FD089D2227B9580004467C /* TransformingObservablesController.swift in Sources */,
+				9552F9FF2232189C00BF3032 /* DelegateProxyLocationController.swift in Sources */,
 				95FD08C1222818290004467C /* TwoWayBindingController.swift in Sources */,
 				95FD87EB222E49E900C2E230 /* UIPickerViewController.swift in Sources */,
 				95FF099022291B5700797971 /* RxTableViewDataSourcesController.swift in Sources */,
@@ -406,6 +413,7 @@
 				95FF098C2229002700797971 /* UIDatePickerController.swift in Sources */,
 				95FD089F2227B96C0004467C /* FilteringObservablesController.swift in Sources */,
 				95FD08A72227BA2E0004467C /* ConnectableObservableOperatorsController.swift in Sources */,
+				95A6B73322363F8200F4933A /* DelegateProxyUIImagePickerController.swift in Sources */,
 				950D2C972230C88500839AB3 /* MVVMRegisterController.swift in Sources */,
 				95F88B69222D09B500250D13 /* UITableViewDifferentCellController.swift in Sources */,
 			);
@@ -555,7 +563,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W34NZN3BBX;
 				INFOPLIST_FILE = RxSwiftKnowledge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,7 +584,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W34NZN3BBX;
 				INFOPLIST_FILE = RxSwiftKnowledge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
