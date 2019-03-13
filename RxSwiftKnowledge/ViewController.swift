@@ -10,7 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class ViewController: UIViewController {
+class ViewController: BaseController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -54,18 +54,20 @@ class ViewController: UIViewController {
                                                             "MJRefresh",
                                                             "DelegateProxyLocation",
                                                             "DelegateProxyUIImagePicker",
+                                                            "DelegateProxyUIApplication",
+                                                            "SendMessageAndMethodInvoked",
+                                                            "UITableViewCellButtonClick",
+                                                            "NotificationCenter",
+                                                            "KVO",
                                                             ])
         return datas
     }()
     
     fileprivate let cellIdentifier = "cellIdentifier";
     
-    let disposeBag = DisposeBag()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "RxSwiftKnowledge"
-        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         datas.bind(to:tableView.rx.items(cellIdentifier:cellIdentifier, cellType:UITableViewCell.self)) { _, title, cell in
             cell.textLabel?.text = title

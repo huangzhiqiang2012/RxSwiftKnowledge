@@ -11,8 +11,13 @@
 		950D2C972230C88500839AB3 /* MVVMRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950D2C962230C88500839AB3 /* MVVMRegisterController.swift */; };
 		950D2C9A223141BE00839AB3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950D2C99223141BE00839AB3 /* ActivityIndicator.swift */; };
 		950D2C9C2231450000839AB3 /* MJRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950D2C9B2231450000839AB3 /* MJRefreshController.swift */; };
+		9548038E2237893D009221FE /* SendMessageAndMethodInvokedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9548038D2237893D009221FE /* SendMessageAndMethodInvokedController.swift */; };
+		9548039022379295009221FE /* UITableViewCellButtonClickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9548038F22379295009221FE /* UITableViewCellButtonClickController.swift */; };
+		9548039422379BAF009221FE /* NotificationCenterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9548039322379BAF009221FE /* NotificationCenterController.swift */; };
+		954803962237A380009221FE /* KVOController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954803952237A380009221FE /* KVOController.swift */; };
 		9552F9FF2232189C00BF3032 /* DelegateProxyLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552F9FE2232189C00BF3032 /* DelegateProxyLocationController.swift */; };
 		95A6B73322363F8200F4933A /* DelegateProxyUIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B73222363F8200F4933A /* DelegateProxyUIImagePickerController.swift */; };
+		95A6B73522366BC700F4933A /* DelegateProxyUIApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B73422366BC700F4933A /* DelegateProxyUIApplicationController.swift */; };
 		95F88B67222CC02700250D13 /* UITableViewEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B66222CC02700250D13 /* UITableViewEditController.swift */; };
 		95F88B69222D09B500250D13 /* UITableViewDifferentCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B68222D09B500250D13 /* UITableViewDifferentCellController.swift */; };
 		95F88B6B222D25F000250D13 /* UICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F88B6A222D25F000250D13 /* UICollectionViewController.swift */; };
@@ -65,8 +70,13 @@
 		950D2C99223141BE00839AB3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		950D2C9B2231450000839AB3 /* MJRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshController.swift; sourceTree = "<group>"; };
 		950D2C9E22314AE200839AB3 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
+		9548038D2237893D009221FE /* SendMessageAndMethodInvokedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageAndMethodInvokedController.swift; sourceTree = "<group>"; };
+		9548038F22379295009221FE /* UITableViewCellButtonClickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellButtonClickController.swift; sourceTree = "<group>"; };
+		9548039322379BAF009221FE /* NotificationCenterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterController.swift; sourceTree = "<group>"; };
+		954803952237A380009221FE /* KVOController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOController.swift; sourceTree = "<group>"; };
 		9552F9FE2232189C00BF3032 /* DelegateProxyLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyLocationController.swift; sourceTree = "<group>"; };
 		95A6B73222363F8200F4933A /* DelegateProxyUIImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyUIImagePickerController.swift; sourceTree = "<group>"; };
+		95A6B73422366BC700F4933A /* DelegateProxyUIApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyUIApplicationController.swift; sourceTree = "<group>"; };
 		95F88B66222CC02700250D13 /* UITableViewEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewEditController.swift; sourceTree = "<group>"; };
 		95F88B68222D09B500250D13 /* UITableViewDifferentCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDifferentCellController.swift; sourceTree = "<group>"; };
 		95F88B6A222D25F000250D13 /* UICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +230,11 @@
 				950D2C9B2231450000839AB3 /* MJRefreshController.swift */,
 				9552F9FE2232189C00BF3032 /* DelegateProxyLocationController.swift */,
 				95A6B73222363F8200F4933A /* DelegateProxyUIImagePickerController.swift */,
+				95A6B73422366BC700F4933A /* DelegateProxyUIApplicationController.swift */,
+				9548038D2237893D009221FE /* SendMessageAndMethodInvokedController.swift */,
+				9548038F22379295009221FE /* UITableViewCellButtonClickController.swift */,
+				9548039322379BAF009221FE /* NotificationCenterController.swift */,
+				954803952237A380009221FE /* KVOController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -390,11 +405,13 @@
 				95FD08C322281D110004467C /* Operators.swift in Sources */,
 				95FD08BD2228127F0004467C /* UIActivityIndicatorViewUIApplicationController.swift in Sources */,
 				950D2C9A223141BE00839AB3 /* ActivityIndicator.swift in Sources */,
+				9548039022379295009221FE /* UITableViewCellButtonClickController.swift in Sources */,
 				95FC5801222FA3A300AEE415 /* MoyaController.swift in Sources */,
 				95FD08822227894C0004467C /* AppDelegate.swift in Sources */,
 				95FD08B32227BA8A0004467C /* SchedulersController.swift in Sources */,
 				95FD089D2227B9580004467C /* TransformingObservablesController.swift in Sources */,
 				9552F9FF2232189C00BF3032 /* DelegateProxyLocationController.swift in Sources */,
+				9548038E2237893D009221FE /* SendMessageAndMethodInvokedController.swift in Sources */,
 				95FD08C1222818290004467C /* TwoWayBindingController.swift in Sources */,
 				95FD87EB222E49E900C2E230 /* UIPickerViewController.swift in Sources */,
 				95FF099022291B5700797971 /* RxTableViewDataSourcesController.swift in Sources */,
@@ -405,15 +422,18 @@
 				95FD08952227B18A0004467C /* ObservableController.swift in Sources */,
 				95FC57FF222F723100AEE415 /* RxAlamofireController.swift in Sources */,
 				95FD08A52227B9A90004467C /* MathematicalAndAggregateOperatorsController.swift in Sources */,
+				954803962237A380009221FE /* KVOController.swift in Sources */,
 				95FD87ED222E603500C2E230 /* WeakSelfUnownedSelfController.swift in Sources */,
 				95FD08A12227B97B0004467C /* ConditionalAndBooleanOperatorsController.swift in Sources */,
 				95FD08972227B19B0004467C /* ObserverController.swift in Sources */,
+				95A6B73522366BC700F4933A /* DelegateProxyUIApplicationController.swift in Sources */,
 				95FF098A2228FE4000797971 /* UIGestureRecognizerController.swift in Sources */,
 				95FD08AF2227BA700004467C /* SingleCompletableMaybeController.swift in Sources */,
 				95FF098C2229002700797971 /* UIDatePickerController.swift in Sources */,
 				95FD089F2227B96C0004467C /* FilteringObservablesController.swift in Sources */,
 				95FD08A72227BA2E0004467C /* ConnectableObservableOperatorsController.swift in Sources */,
 				95A6B73322363F8200F4933A /* DelegateProxyUIImagePickerController.swift in Sources */,
+				9548039422379BAF009221FE /* NotificationCenterController.swift in Sources */,
 				950D2C972230C88500839AB3 /* MVVMRegisterController.swift in Sources */,
 				95F88B69222D09B500250D13 /* UITableViewDifferentCellController.swift in Sources */,
 			);
